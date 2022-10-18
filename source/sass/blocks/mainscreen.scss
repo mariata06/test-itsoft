@@ -1,0 +1,139 @@
+.mainscreen {
+  position: relative;
+  padding-bottom: 21px;
+
+  @include vp-1280 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-1440 {
+    min-height: 760px;
+  }
+
+  &__title {
+    @include vp-768 {
+      margin-bottom: 300px;
+    }
+    @include vp-1280 {
+      width: 400px;
+    }
+  }
+
+  &__desc {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__links {
+    display: none;
+    z-index: 1;
+    position: relative;
+
+    @include vp-768 {
+      display: block;
+    }
+  }
+
+  &__link {
+    min-height: 67px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: $color-palatinate-purple-2;
+    text-decoration: underline;
+    margin-bottom: 32px;
+
+    svg {
+      fill: none;
+      margin-right: 30px;
+
+      @include vp-768 {
+        transform: scale(0.7);
+      }
+
+      @include vp-1024 {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__slider {
+    @include vp-768 {
+      width: 700px;
+      margin-left: auto;
+      position: absolute;
+      right: 0;
+      top: 100px;
+    }
+    @include vp-1280 {
+      width: 938px;
+    }
+  }
+
+  &__slider.swiper {
+    margin-right: 0;
+  }
+
+  &__slider-container {
+    margin-bottom: 15px;
+  }
+
+  &__slider-slide {
+    @include vp-768 {
+      width: 700px;
+    }
+
+    @include vp-1280 {
+      width: 938px;
+      height: 489px;
+    }
+  }
+
+  &__slider-nav {
+    display: flex;
+    justify-content: center;
+
+    @include vp-1280 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__slide-prev,
+  &__slide-next {
+    margin: 0 7.5px;
+
+    @include vp-1280 {
+      margin: 0 30px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+
+    @include vp-768 {
+      color: $color-default-white;
+      border-color: $color-default-white;
+    }
+  }
+
+  &__bg-icon {
+    position: absolute;
+    top: 45px;
+
+    @media (min-width: 321px) {
+      width: 100%;
+    }
+
+    @include vp-1280 {
+      height: 760px;
+    }
+
+    img {
+      @media (min-width: 321px) {
+        width: 100%;
+      }
+    }
+  }
+}

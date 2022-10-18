@@ -11,11 +11,33 @@
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
+  font-weight: 700;
+  font-family: "merriweather";
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/merriweather-bold.woff2") format("woff2"),
+    url("../fonts/merriweather-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "roboto";
+
+  font-display: swap;
+  src:
+    url("../fonts/roboto-light.woff2") format("woff2"),
+    url("../fonts/roboto-light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "roboto";
+
+  font-display: swap;
+  src:
+    url("../fonts/roboto-regular.woff2") format("woff2"),
+    url("../fonts/roboto-regular.woff") format("woff");
 }

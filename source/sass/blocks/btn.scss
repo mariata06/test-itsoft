@@ -1,10 +1,12 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  // padding: 10px 20px;
+  padding: 0;
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  // background-color: $color-neon-blue;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
@@ -22,5 +24,43 @@
 
   @include hover-focus {
     opacity: 0.8;
+  }
+
+  &--prev,
+  &--next {
+    svg {
+      fill: none;
+      color: $color-palatinate-purple;
+
+      @include vp-768 {
+        color: $color-default-white;
+      }
+    }
+
+    @include vp-1280 {
+      transform: scale(2);
+    }
+  }
+
+  &--purple-br {
+    color: $color-mardi-gras;
+    padding: 10px 26px 7px 25px;
+    border-radius: 100px;
+    border: 1px solid $color-mardi-gras;
+    font-family: "roboto";
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 400;
+    transition: all $trans-default;
+
+    @include vp-1280 {
+      min-width: 263px;
+      min-height: 67px;
+    }
+
+    &:hover {
+      background-color: $color-mardi-gras;
+      color: $color-default-white;
+    }
   }
 }

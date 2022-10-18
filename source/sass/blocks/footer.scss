@@ -1,5 +1,46 @@
 .footer {
-  padding: 40px 0;
+  padding: 35px 0;
 
   background-color: $color-neon-blue;
+  background-color: $color-default-white;
+
+  &__title {
+    color: $color-hot-purple;
+    font-size: 31px;
+    line-height: 31px;
+    font-family: $ff-placeholder;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  &__address {
+    p {
+      margin: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__copyright {
+    margin-top: 50px;
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: baseline;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    p {
+      width: 60%;
+      margin: 0;
+    }
+
+    svg {
+      width: 90px;
+      height: 39px;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 20px;
+  }
 }

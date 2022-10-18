@@ -1,0 +1,52 @@
+mixin mainscreen()
+  section.mainscreen
+    //- +icon("icon-wave-mobile", "100%", 242).mainscreen__bg-icon
+    .mainscreen__bg-icon
+      picture
+        source(srcset="img/content/icon-wave-desktop.svg" media="(min-width: 1280px)")
+        +img-var("content", "icon-wave-mobile", "svg", 320, 242, "волна")
+    .container
+      .mainscreen__desc
+        h1.title.mainscreen__title Надежный помощник в лечении варикоза
+        .mainscreen__links
+          a(href="#").mainscreen__link
+            +icon("icon-play", 67, 67)
+            | Схема проезда
+          a(href="#").mainscreen__link
+            +icon("icon-download", 68, 67)
+            | Инструкция
+          a(href="#").mainscreen__link
+            +icon("icon-location2", 68, 80)
+            | Где купить
+    .mainscreen__slider.swiper
+      .mainscreen__slider-container.swiper-container
+        .mainscreen__slider-wrapper.swiper-wrapper
+          .mainscreen__slider-slide.swiper-slide
+            .mainscreen__slide-img
+              picture
+                source(srcset="img/slides/venarus-group-desktop.png 1x, img/slides/venarus-group-desktop@2x.png 2x" media="(min-width: 768px)")
+                img(src="img/slides/venarus-900-100-mobile.png" srcset="img/slides/venarus-900-100-mobile@2x.png 2x" alt="Венарус")
+          .mainscreen__slider-slide.swiper-slide
+            .mainscreen__slide-img
+              picture
+                source(srcset="img/slides/venarus-group-desktop.png 1x, img/slides/venarus-group-desktop@2x.png 2x" media="(min-width: 768px)")
+                img(src="img/slides/venarus-900-100-mobile.png" srcset="img/slides/venarus-900-100-mobile@2x.png 2x" alt="Венарус")
+          .mainscreen__slider-slide.swiper-slide
+            .mainscreen__slide-img
+              picture
+                source(srcset="img/slides/venarus-group-desktop.png 1x, img/slides/venarus-group-desktop@2x.png 2x" media="(min-width: 768px)")
+                //- source(srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x" media="(min-width: 768px)")
+                img(src="img/slides/venarus-900-100-mobile.png" srcset="img/slides/venarus-900-100-mobile@2x.png 2x" alt="Венарус")
+        .mainscreen__slider-nav
+          button.btn.btn--prev.mainscreen__slide-prev
+            +icon("icon-prev", 34, 34)
+          button.btn.btn--next.mainscreen__slide-next
+            +icon("icon-next", 34, 34)
+      button.btn.btn--purple-br.mainscreen__btn Где купить >
+
+
+//- <picture>
+//-   <source srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x" media="(min-width: 1440px)">
+//-   <source srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x" media="(min-width: 768px)">
+//-   <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Лого Погнали">
+//- </picture>

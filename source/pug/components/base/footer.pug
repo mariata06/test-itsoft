@@ -1,3 +1,30 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      h2.footer__title БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ&nbsp;ЯВЛЯЕТСЯ ЛЕКАРСТВОМ
+      .footer__links
+        a(href="#").footer__link Сообщить о нежелательном явлении
+        .footer__address
+          a(href="#").footer__link Условия пользования сайтом и файлами Cookies
+          p г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж <br>Телефон: +7 (495) 555-55-55
+        .footer__wrapper
+          .footer__social.social
+            a(href="#").social__link.social__link--vk
+              +icon("icon-vk", 32, 24)
+            a(href="#").social__link.social__link--fb
+              +icon("icon-fb", 25, 24)
+            a(href="#").social__link.social__link--twitter
+              +icon("icon-twitter", 28, 24)
+            a(href="#").social__link.social__link--ok
+              +icon("icon-ok", 25, 24)
+            //- a(href="#").social__link.social__link--vk
+            //-   +icon("icon-vk", 32, 24)
+            //- a(href="#").social__link.social__link--fb
+            //-   +icon("icon-fb", 25, 24)
+            //- a(href="#").social__link.social__link--twitter
+            //-   +icon("icon-twitter", 28, 24)
+            //- a(href="#").social__link.social__link--ok
+            //-   +icon("icon-ok", 25, 24)
+          .footer__copyright
+            +icon("logo-pharm", 90, 39)
+            p Создание сайтов Фарм-студия №1 в Рунете

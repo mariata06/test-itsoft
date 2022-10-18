@@ -12,6 +12,16 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
+$color-palatinate-purple:           #5B0E58;
+$color-palatinate-purple-2:         #590D56;
+$color-mardi-gras:                  #47093E;
+$color-dark-purple:                 #771373;
+$color-hot-purple:                  #540C50;
+$color-nero:                        #242424;
+$color-grey:                        #777777;
+$color-grey-2:                      #7A7A7A;
+$color-grey-3:                      #828282;
+
 
 // Gradient
 
@@ -27,7 +37,7 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-placeholder:                    "roboto", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -49,6 +59,7 @@ $vp-768:                            768px;
 $vp-1024:                           1024px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
+$vp-1690:                           1690px;
 $vp-1920:                           1920px;
 
 // Retina

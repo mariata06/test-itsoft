@@ -19,18 +19,24 @@ mixin header(headerMods, currentUrl)
     .container
       if(currentUrl === "index.html")
         //- lighthouse снимает 10 баллов SEO за <a> без href
-        span.header__logo Логотип
+        span.header__logo
+          +icon("logo-venarus", 135, 25)
       else
-        a.header__logo(href="index.html", aria-label="Переход на главную") Логотип
+        a.header__logo(href="index.html", aria-label="Переход на главную")
+          +icon("logo-venarus", 135, 25)
       nav.main-nav
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-          +icon("icon-burger", 20, 20)
         .main-nav__wrapper
           ul.main-nav__list
-            each link in headerLinks
-              - const activeState = currentUrl === link.href
-              li.main-nav__item
-                if(activeState)
-                  span.main-nav__link.is-active=link.text
-                else
-                  a.main-nav__link(href=link.href)=link.text
+            .main-nav__item
+              +icon("icon-search", 24, 23)
+            .main-nav__item
+              +icon("icon-location", 21, 24)
+        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          +icon("icon-burger", 33, 20)
+            //- each link in headerLinks
+            //-   - const activeState = currentUrl === link.href
+            //-   li.main-nav__item
+            //-     if(activeState)
+            //-       span.main-nav__link.is-active=link.text
+            //-     else
+            //-       a.main-nav__link(href=link.href)=link.text

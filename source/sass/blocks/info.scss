@@ -1,0 +1,57 @@
+.info {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  &__link-title {
+    font-family: $ff-placeholder;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 26px;
+    font-weight: 300;
+    color: $color-default-white;
+    z-index: 100;
+
+    @include vp-1280 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179.96deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    &--facts {
+      min-height: 300px;
+      background-color: $color-mardi-gras;
+
+      &::after {
+        display: none;
+        width: 0;
+      }
+    }
+  }
+
+
+
+  &__img {
+    display: block;
+    img {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

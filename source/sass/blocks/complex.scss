@@ -1,0 +1,75 @@
+.complex {
+  padding-top: 50px;
+  .container {
+    @include vp-1440 {
+      display: flex;
+    }
+  }
+
+  &__heading {
+    @include vp-1440 {
+      width: 263px;
+    }
+
+    p {
+      @include vp-1440 {
+        line-height: 24.77px;
+      }
+    }
+  }
+
+  &__effect {
+    border-top: 1px solid $color-mardi-gras;
+    // border-bottom: 1px solid $color-mardi-gras;
+
+    background-image: url("../img/svg/icon-star.svg"), url("../img/svg/icon-ellipse-1.svg"), url("../img/svg/icon-ellipse-2.svg"), url("../img/svg/icon-ellipse-3.svg"), url("../img/svg/icon-ellipse-4.svg");
+    background-repeat: no-repeat;
+    background-position: top right 30px, top 240px right, top 400px left 150px, top 670px right, left 200px bottom 150px;
+    background-size: 67px;
+    z-index: 1000;
+
+    @include vp-1280 {
+      width: 848px;
+      background-position: top left 100px, top 240px right, top 400px left 50px, top 670px right, left 120px bottom;
+      background-size: unset;
+      // background-size: 134px;
+    }
+  }
+
+  &__item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $color-mardi-gras;
+    display: flex;
+    flex-direction: column;
+    z-index: 900;
+    position: relative;
+
+    a {
+      margin-right: auto;
+      font-size: 18px;
+      line-height: 21.09px;
+      color: $color-palatinate-purple-2;
+      text-decoration: underline;
+      align-self: flex-end;
+
+      @include vp-1280 {
+        margin-right: 160px;
+      }
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 300;
+      margin-bottom: 0;
+      width: 100%;
+
+      @include vp-1280 {
+        width: 360px;
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}

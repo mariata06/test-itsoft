@@ -1,9 +1,12 @@
 .main-nav {
+  display: flex;
+  margin-left: auto;
   &__list {
     display: flex;
     margin: 0;
     margin-right: 20px;
     margin-left: 60px;
+    margin: 0;
     padding: 0;
 
     list-style: none;
@@ -11,6 +14,10 @@
 
   &__item {
     margin-right: 20px;
+
+    svg {
+      fill: none;
+    }
   }
 
   &__link {
@@ -22,6 +29,16 @@
   }
 
   &__toggle {
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
     display: none;
+    display: block;
+    // margin-left: auto;
+
+    svg {
+      fill: none;
+    }
   }
 }
