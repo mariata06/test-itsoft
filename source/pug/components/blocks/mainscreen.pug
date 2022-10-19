@@ -9,13 +9,13 @@ mixin mainscreen()
       .mainscreen__desc
         h1.title.mainscreen__title Надежный помощник в лечении варикоза
         .mainscreen__links
-          a(href="#").mainscreen__link
+          a(href="#").mainscreen__link.link
             +icon("icon-play", 67, 67)
             | Схема проезда
-          a(href="#").mainscreen__link
+          a(href="#").mainscreen__link.link
             +icon("icon-download", 68, 67)
             | Инструкция
-          a(href="#").mainscreen__link
+          a(href="#").mainscreen__link.link
             +icon("icon-location2", 68, 80)
             | Где купить
     .mainscreen__slider.swiper
@@ -42,7 +42,7 @@ mixin mainscreen()
             +icon("icon-prev", 34, 34)
           button.btn.btn--next.mainscreen__slide-next
             +icon("icon-next", 34, 34)
-      button.btn.btn--purple-br.mainscreen__btn Где купить >
+      a(href="#").btn.btn--purple-br.mainscreen__btn Где купить >
 
 
 //- <picture>

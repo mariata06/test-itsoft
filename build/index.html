@@ -169,19 +169,17 @@
           <nav class="main-nav">
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <div class="main-nav__item">
-                  <svg width="24" height="23" aria-hidden="true">
-                    <use xlink:href="#icon-search"></use>
-                  </svg>
-                </div>
-                <div class="main-nav__item">
-                  <svg width="21" height="24" aria-hidden="true">
-                    <use xlink:href="#icon-location"></use>
-                  </svg>
-                </div>
+                <li class="main-nav__item"><a class="main-nav__search link" href="#">
+                    <svg width="24" height="23" aria-hidden="true">
+                      <use xlink:href="#icon-search"></use>
+                    </svg></a></li>
+                <li class="main-nav__item"><a class="main-nav__location link" href="#">
+                    <svg width="21" height="24" aria-hidden="true">
+                      <use xlink:href="#icon-location"></use>
+                    </svg></a></li>
               </ul>
             </div>
-            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+            <button class="main-nav__toggle btn-reset btn btn--toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
               <svg width="33" height="20" aria-hidden="true">
                 <use xlink:href="#icon-burger"></use>
               </svg>
@@ -199,13 +197,13 @@
           <div class="container">
             <div class="mainscreen__desc">
               <h1 class="title mainscreen__title">Надежный помощник в лечении варикоза</h1>
-              <div class="mainscreen__links"><a class="mainscreen__link" href="#">
+              <div class="mainscreen__links"><a class="mainscreen__link link" href="#">
                   <svg width="67" height="67" aria-hidden="true">
                     <use xlink:href="#icon-play"></use>
-                  </svg>Схема проезда</a><a class="mainscreen__link" href="#">
+                  </svg>Схема проезда</a><a class="mainscreen__link link" href="#">
                   <svg width="68" height="67" aria-hidden="true">
                     <use xlink:href="#icon-download"></use>
-                  </svg>Инструкция</a><a class="mainscreen__link" href="#">
+                  </svg>Инструкция</a><a class="mainscreen__link link" href="#">
                   <svg width="68" height="80" aria-hidden="true">
                     <use xlink:href="#icon-location2"></use>
                   </svg>Где купить</a></div>
@@ -248,8 +246,7 @@
                   </svg>
                 </button>
               </div>
-            </div>
-            <button class="btn btn--purple-br mainscreen__btn">Где купить ></button>
+            </div><a class="btn btn--purple-br mainscreen__btn" href="#">Где купить ></a>
           </div>
         </section>
         <section class="promo">
@@ -295,19 +292,19 @@
               <p>Венарус показан для терапии симптомов хронических заболеваний вен (устранения и облегчения симптомов).</p>
             </div>
             <div class="complex__effect">
-              <div class="complex__item"><a href="#">Подробнее ></a>
+              <div class="complex__item"><a class="complex__link link" href="#">Подробнее ></a>
                 <p>Помогает <br> предотвратить судороги</p>
               </div>
-              <div class="complex__item"><a href="#">Подробнее ></a>
+              <div class="complex__item"><a class="complex__link link" href="#">Подробнее ></a>
                 <p>Способствует <br> снижению тяжести в ногах</p>
               </div>
-              <div class="complex__item"><a href="#">Подробнее ></a>
+              <div class="complex__item"><a class="complex__link link" href="#">Подробнее ></a>
                 <p>Способствует снижению <br> болевых ощущений</p>
               </div>
-              <div class="complex__item"><a href="#">Подробнее ></a>
+              <div class="complex__item"><a class="complex__link link" href="#">Подробнее ></a>
                 <p>Помогает <br> уменьшить отеки</p>
               </div>
-              <div class="complex__item"><a href="#">Подробнее ></a>
+              <div class="complex__item"><a class="complex__link link" href="#">Подробнее ></a>
                 <p>Оказывает ангиопротекторное и&nbsp;венотонизурующее действие</p>
               </div>
             </div>
@@ -374,8 +371,8 @@
           <div class="container">
             <div class="expert__content">
               <div class="expert__heading">
-                <div class="expert__title title title--h2">Мнение специалистов</div>
-                <div class="expert__paragraph">Фармакотерапия — неотъемлемый компонент современного лечения хронического заболевания вен.</div>
+                <h2 class="expert__title title title--h2">Мнение специалистов</h2>
+                <p class="expert__paragraph">Фармакотерапия — неотъемлемый компонент современного лечения хронического заболевания вен.</p>
               </div>
               <div class="expert__slider swiper">
                 <div class="expert__slider-container swiper-container">
@@ -414,27 +411,26 @@
               <div class="info__heading"></div>
               <h2 class="info__title title title--h2">Полезная информация</h2>
               <p class="info__paragraph">ВЕНАРУС — надежный помощник влечении варикоза, хранитель жекнских ног на пути к ее мечте!</p>
-              <div class="info__links"><a class="info__link" href="#">
+              <div class="info__links"><a class="info__link link" href="#">
                   <div class="info__img">
                     <picture>
                       <source srcset="img/content/info-img1-desktop.png 1x, img/content/info-img1-desktop@2x.png 2x" media="(min-width: 768px)"><img src="img/content/info-img1-desktop.png" srcset="img/content/info-img1-desktop@2x.png 2x" alt="Венарус">
                     </picture>
                   </div>
-                  <h3 class="info__link-title">Профилактические упражнения</h3></a><a class="info__link" href="#">
+                  <h3 class="info__link-title">Профилактические упражнения</h3></a><a class="info__link link" href="#">
                   <div class="info__img">
                     <picture>
                       <source srcset="img/content/info-img2-desktop.png 1x, img/content/info-img2-desktop@2x.png 2x" media="(min-width: 768px)"><img src="img/content/info-img2-desktop.png" srcset="img/content/info-img2-desktop@2x.png 2x" alt="Венарус">
                     </picture>
                   </div>
-                  <h3 class="info__link-title">Диагностика и способы лечения</h3></a><a class="info__link" href="#">
+                  <h3 class="info__link-title">Диагностика и способы лечения</h3></a><a class="info__link link" href="#">
                   <div class="info__img">
                     <picture>
                       <source srcset="img/content/info-img3-desktop.png 1x, img/content/info-img3-desktop@2x.png 2x" media="(min-width: 768px)"><img src="img/content/info-img3-desktop.png" srcset="img/content/info-img3-desktop@2x.png 2x" alt="Венарус">
                     </picture>
                   </div>
-                  <h3 class="info__link-title">Рекомендации по питанию</h3></a><a class="info__link info__link--facts" href="#">
-                  <h3 class="title title--h3 info__link-title">Факты о варикозе</h3></a></div>
-              <button class="btn btn--purple-br info__btn">Подробнее ></button>
+                  <h3 class="info__link-title">Рекомендации по питанию</h3></a><a class="info__link link info__link--facts" href="#">
+                  <h3 class="title title--h3 info__link-title">Факты о варикозе</h3></a></div><a class="btn btn--purple-br info__link-btn" href="#">Подробнее&nbsp;></a>
             </div>
           </div>
         </section>
@@ -442,28 +438,28 @@
       <footer class="footer">
         <div class="container">
           <h2 class="footer__title">БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ&nbsp;ЯВЛЯЕТСЯ ЛЕКАРСТВОМ</h2>
-          <div class="footer__links"><a class="footer__link" href="#">Сообщить о нежелательном явлении</a>
-            <div class="footer__address"><a class="footer__link" href="#">Условия пользования сайтом и файлами Cookies</a>
-              <p>г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж <br>Телефон: +7 (495) 555-55-55</p>
+          <div class="footer__links"><a class="footer__link link" href="#">Сообщить о нежелательном явлении</a>
+            <div class="footer__address"><a class="footer__link link" href="#">Условия пользования сайтом и файлами Cookies</a>
+              <p>г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж <br></p><a class="footer__link link" href="tel:+74955555555">Телефон: +7 (495) 555-55-55</a>
             </div>
             <div class="footer__wrapper">
-              <div class="footer__social social"><a class="social__link social__link--vk" href="#">
+              <div class="footer__social social"><a class="social__link social__link--vk link" href="#">
                   <svg width="32" height="24" aria-hidden="true">
                     <use xlink:href="#icon-vk"></use>
-                  </svg></a><a class="social__link social__link--fb" href="#">
+                  </svg></a><a class="social__link social__link--fb link" href="#">
                   <svg width="25" height="24" aria-hidden="true">
                     <use xlink:href="#icon-fb"></use>
-                  </svg></a><a class="social__link social__link--twitter" href="#">
+                  </svg></a><a class="social__link social__link--twitter link" href="#">
                   <svg width="28" height="24" aria-hidden="true">
                     <use xlink:href="#icon-twitter"></use>
-                  </svg></a><a class="social__link social__link--ok" href="#">
+                  </svg></a><a class="social__link social__link--ok link" href="#">
                   <svg width="25" height="24" aria-hidden="true">
                     <use xlink:href="#icon-ok"></use>
                   </svg></a></div>
-              <div class="footer__copyright">
-                <svg width="90" height="39" aria-hidden="true">
-                  <use xlink:href="#logo-pharm"></use>
-                </svg>
+              <div class="footer__copyright"><a class="footer__link link" href="#">
+                  <svg width="90" height="39" aria-hidden="true">
+                    <use xlink:href="#logo-pharm"></use>
+                  </svg></a>
                 <p>Создание сайтов Фарм-студия №1 в Рунете</p>
               </div>
             </div>

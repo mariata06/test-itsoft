@@ -27,11 +27,13 @@ mixin header(headerMods, currentUrl)
       nav.main-nav
         .main-nav__wrapper
           ul.main-nav__list
-            .main-nav__item
-              +icon("icon-search", 24, 23)
-            .main-nav__item
-              +icon("icon-location", 21, 24)
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+            li.main-nav__item
+              a(href="#").main-nav__search.link
+                +icon("icon-search", 24, 23)
+            li.main-nav__item
+              a(href="#").main-nav__location.link
+                +icon("icon-location", 21, 24)
+        button.main-nav__toggle.btn-reset.btn.btn--toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
           +icon("icon-burger", 33, 20)
             //- each link in headerLinks
             //-   - const activeState = currentUrl === link.href

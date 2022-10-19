@@ -11,6 +11,13 @@
   }
 
   &__title {
+    letter-spacing: -1.7px;
+    line-height: 39px;
+
+    @include vp-375 {
+      margin-bottom: 40px;
+    }
+
     @include vp-768 {
       margin-bottom: 300px;
     }
@@ -76,7 +83,7 @@
   }
 
   &__slider-container {
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 
   &__slider-slide {
@@ -90,9 +97,29 @@
     }
   }
 
+  &__slide-img {
+    margin-top: -10px;
+
+    img {
+      @include vp-375 {
+        margin: 0 auto;
+      }
+    }
+  }
+
   &__slider-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 49px;
     display: flex;
     justify-content: center;
+    z-index: 100;
+
+    @include vp-768 {
+      left: unset;
+      right: 26%;
+    }
 
     @include vp-1280 {
       margin-bottom: 40px;
@@ -112,6 +139,15 @@
     display: block;
     margin: 0 auto;
 
+    @include vp-375 {
+      // margin-left: 50px;
+      margin-top: 50px;
+    }
+
+    @include vp-768 {
+      margin-right: 30%;
+    }
+
     @include vp-768 {
       color: $color-default-white;
       border-color: $color-default-white;
@@ -120,7 +156,7 @@
 
   &__bg-icon {
     position: absolute;
-    top: 45px;
+    top: 43px;
 
     @media (min-width: 321px) {
       width: 100%;

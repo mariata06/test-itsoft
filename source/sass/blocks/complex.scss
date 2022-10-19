@@ -1,5 +1,6 @@
 .complex {
   padding-top: 50px;
+  padding: 35px 0;
   .container {
     @include vp-1440 {
       display: flex;

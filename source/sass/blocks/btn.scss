@@ -12,9 +12,9 @@
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
+  // &--red {
+  //   background-color: $color-torch-red;
+  // }
 
   &:disabled {
     opacity: 0.5;
@@ -23,7 +23,7 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   &--prev,
@@ -52,15 +52,25 @@
     line-height: 16.41px;
     font-weight: 400;
     transition: all $trans-default;
+    transition: opacity $trans-default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+    height: 34px;
 
     @include vp-1280 {
-      min-width: 263px;
-      min-height: 67px;
+      width: 263px;
+      height: 67px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &:hover {
-      background-color: $color-mardi-gras;
-      color: $color-default-white;
+      // background-color: $color-mardi-gras;
+      // color: $color-default-white;
+      opacity: 0.7;
     }
   }
 }

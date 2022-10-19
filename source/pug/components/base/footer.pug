@@ -3,19 +3,20 @@ mixin footer(footerMods)
     .container
       h2.footer__title БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ&nbsp;ЯВЛЯЕТСЯ ЛЕКАРСТВОМ
       .footer__links
-        a(href="#").footer__link Сообщить о нежелательном явлении
+        a(href="#").footer__link.link Сообщить о нежелательном явлении
         .footer__address
-          a(href="#").footer__link Условия пользования сайтом и файлами Cookies
-          p г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж <br>Телефон: +7 (495) 555-55-55
+          a(href="#").footer__link.link Условия пользования сайтом и файлами Cookies
+          p г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж <br>
+          a(href="tel:+74955555555").footer__link.link Телефон: +7 (495) 555-55-55
         .footer__wrapper
           .footer__social.social
-            a(href="#").social__link.social__link--vk
+            a(href="#").social__link.social__link--vk.link
               +icon("icon-vk", 32, 24)
-            a(href="#").social__link.social__link--fb
+            a(href="#").social__link.social__link--fb.link
               +icon("icon-fb", 25, 24)
-            a(href="#").social__link.social__link--twitter
+            a(href="#").social__link.social__link--twitter.link
               +icon("icon-twitter", 28, 24)
-            a(href="#").social__link.social__link--ok
+            a(href="#").social__link.social__link--ok.link
               +icon("icon-ok", 25, 24)
             //- a(href="#").social__link.social__link--vk
             //-   +icon("icon-vk", 32, 24)
@@ -26,5 +27,6 @@ mixin footer(footerMods)
             //- a(href="#").social__link.social__link--ok
             //-   +icon("icon-ok", 25, 24)
           .footer__copyright
-            +icon("logo-pharm", 90, 39)
+            a(href="#").footer__link.link
+              +icon("logo-pharm", 90, 39)
             p Создание сайтов Фарм-студия №1 в Рунете
