@@ -4,6 +4,7 @@
   .container {
     @include vp-1280 {
       display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -40,10 +41,14 @@
     }
 
     @include vp-1280 {
-      width: 848px;
-      background-position: top left 100px, top 240px right, top 400px left 50px, top 670px right, left 120px bottom;
+      width: 780px;
+      // background-position: top left 100px, top 240px right, top 400px left 50px, top 670px right, left 120px bottom;
+      background-position: top left 100px,top 228px right,top 370px left 110px,top 689px right,left 120px bottom -50px;
       background-size: unset;
       // background-size: 134px;
+    }
+    @include vp-1440 {
+      width: 848px;
     }
   }
 
@@ -55,6 +60,10 @@
     flex-direction: column;
     z-index: 900;
     position: relative;
+
+    @include vp-1280 {
+      flex-direction: row;
+    }
 
     a {
       margin-right: auto;
@@ -80,6 +89,8 @@
         width: 360px;
         font-size: 30px;
         line-height: 30px;
+        margin: 0;
+        margin-bottom: 30px;
       }
     }
   }

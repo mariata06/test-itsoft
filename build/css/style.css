@@ -2931,6 +2931,12 @@ button,
     padding: 0 32px;
   }
 
+  .btn--purple-br {
+    width: 155px;
+    height: 40px;
+    padding-left: 30px;
+  }
+
   .mainscreen {
     min-height: 820px;
     padding-top: 50px;
@@ -3102,6 +3108,9 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .complex__heading {
@@ -3109,9 +3118,16 @@ button,
   }
 
   .complex__effect {
-    width: 848px;
-    background-position: top left 100px, top 240px right, top 400px left 50px, top 670px right, left 120px bottom;
+    width: 780px;
+    background-position: top left 100px,top 228px right,top 370px left 110px,top 689px right,left 120px bottom -50px;
     background-size: unset;
+  }
+
+  .complex__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .complex__item a {
@@ -3122,10 +3138,12 @@ button,
     width: 360px;
     font-size: 30px;
     line-height: 30px;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .product {
-    padding: 300px 0 322px;
+    padding: 150px 0 50px;
   }
 
   .product__bg-icon {
@@ -3150,8 +3168,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    right: 20px;
-    top: 20%;
+    right: 0px;
+    top: 10%;
   }
 
   .product__slide-prev,
@@ -3178,6 +3196,12 @@ button,
   .info__link-title {
     font-size: 36px;
     line-height: 36px;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  .section-heading .title {
+    width: 263px;
   }
 }
 
@@ -3224,6 +3248,10 @@ button,
 
   .complex__heading p {
     line-height: 24.77px;
+  }
+
+  .complex__effect {
+    width: 848px;
   }
 }
 

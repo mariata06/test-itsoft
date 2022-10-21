@@ -1,6 +1,7 @@
 .info {
   padding-top: 35px;
   padding-bottom: 35px;
+
   &__link-title {
     font-family: $ff-placeholder;
     position: absolute;
@@ -14,6 +15,8 @@
     @include vp-1280 {
       font-size: 36px;
       line-height: 36px;
+      margin-top: 20px;
+      padding-left: 20px;
     }
   }
 
@@ -33,6 +36,10 @@
     @include vp-768 {
       width: 47%;
       // margin-right: 20px;
+    }
+
+    @include vp-1280 {
+      // padding: 20px;
     }
 
     &::after {

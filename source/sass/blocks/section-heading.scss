@@ -2,4 +2,10 @@
   @include vp-1024 {
     width: 400px;
   }
+
+  .title {
+    @include vp-1280 {
+      width: 263px;
+    }
+  }
 }

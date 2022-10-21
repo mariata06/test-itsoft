@@ -6,7 +6,7 @@
     min-height: 840px;
   }
   @include vp-1280 {
-    padding: 300px 0 322px;
+    padding: 150px 0 50px;
   }
 
   position: relative;
@@ -116,8 +116,8 @@
 
     @include vp-1280 {
       flex-direction: column;
-      right: 20px;
-      top: 20%;
+      right: 0px;
+      top: 10%;
     }
   }
 
