@@ -22,6 +22,10 @@
 
   &__heading {
     width: 263px;
+
+    @include vp-1024 {
+      width: 400px;
+    }
   }
 
   &__title {
@@ -72,6 +76,14 @@
 
   &__slider-container {
     margin-bottom: 46px;
+  }
+
+  &__slide-img {
+    img {
+      @include vp-1024 {
+        width: 100%;
+      }
+    }
   }
 
   // &__slider-pagination {

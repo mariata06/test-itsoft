@@ -2,13 +2,13 @@
   padding-top: 50px;
   padding: 35px 0;
   .container {
-    @include vp-1440 {
+    @include vp-1280 {
       display: flex;
     }
   }
 
   &__heading {
-    @include vp-1440 {
+    @include vp-1280 {
       width: 263px;
     }
 
@@ -28,6 +28,16 @@
     background-position: top right 30px, top 240px right, top 400px left 150px, top 670px right, left 200px bottom 150px;
     background-size: 67px;
     z-index: 1000;
+
+    @include vp-768 {
+      background-size: 100px;
+      background-position: top right 30px,top 227px right 200px,top 400px left 550px,top 630px right 300px,left 500px bottom 90px;
+    }
+
+    @include vp-1024 {
+      background-size: 140px;
+      background-position: top 25px right 300px,top 227px right 200px,top 400px left 500px,top 630px right 300px,left 700px bottom 25px;
+    }
 
     @include vp-1280 {
       width: 848px;

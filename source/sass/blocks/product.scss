@@ -2,6 +2,9 @@
   padding-top: 70px;
   padding-top: 35px;
   padding-bottom: 35px;
+  @include vp-1024 {
+    min-height: 840px;
+  }
   @include vp-1280 {
     padding: 300px 0 322px;
   }
@@ -38,7 +41,7 @@
     }
   }
 
-  &__about {
+  &__content {
     position: relative;
     z-index: 100;
     display: flex;

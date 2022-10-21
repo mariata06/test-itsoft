@@ -43,6 +43,10 @@
       margin-left: auto;
       // text-align: right;
 
+      @include vp-1280 {
+        width: 200px;
+      }
+
       @include vp-1440 {
         font-size: 16px;
         line-height: 24.77px;

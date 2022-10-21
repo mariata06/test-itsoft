@@ -1494,7 +1494,7 @@ button,
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 .header {
@@ -1728,6 +1728,9 @@ button,
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0;
+  font-size: 14px;
+  line-height: 16.41px;
+  font-weight: 400;
   color: #ffffff;
   background-color: transparent;
   border: none;
@@ -1754,9 +1757,6 @@ button,
   border-radius: 100px;
   border: 1px solid #47093E;
   font-family: "roboto";
-  font-size: 14px;
-  line-height: 16.41px;
-  font-weight: 400;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2329,13 +2329,6 @@ button,
   font-family: "merriweather", "Arial";
   font-weight: 700;
   margin: 0;
-  font-size: 47px;
-  line-height: 39px;
-}
-
-.title--h2 {
-  font-size: 30px;
-  line-height: 36px;
 }
 
 .promo {
@@ -2539,7 +2532,7 @@ button,
   margin-bottom: 40px;
 }
 
-.product__about {
+.product__content {
   position: relative;
   z-index: 100;
   display: -webkit-box;
@@ -2821,7 +2814,7 @@ button,
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 16px;
+    padding: 0 24px;
   }
 
   .modal__wrapper {
@@ -2837,6 +2830,11 @@ button,
     width: 100%;
   }
 
+  .btn {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
   .btn--prev svg,
   .btn--next svg {
     color: #ffffff;
@@ -2848,6 +2846,10 @@ button,
 
   .mainscreen__links {
     display: block;
+  }
+
+  .mainscreen__link {
+    max-width: 225px;
   }
 
   .mainscreen__link svg {
@@ -2882,6 +2884,11 @@ button,
     border-color: #ffffff;
   }
 
+  .complex__effect {
+    background-size: 100px;
+    background-position: top right 30px,top 227px right 200px,top 400px left 550px,top 630px right 300px,left 500px bottom 90px;
+  }
+
   .product__img {
     margin-left: auto;
     margin-right: 0;
@@ -2909,23 +2916,47 @@ button,
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .info__link {
     width: 47%;
-    margin-right: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding: 0 24px;
+    padding: 0 32px;
+  }
+
+  .mainscreen {
+    min-height: 820px;
+    padding-top: 50px;
+  }
+
+  .mainscreen__title {
+    width: 40%;
+  }
+
+  .mainscreen__links {
+    margin-top: 350px;
   }
 
   .mainscreen__link svg {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+  }
+
+  .title--h1 {
+    font-size: 43px;
+    line-height: 35px;
+  }
+
+  .promo {
+    margin-bottom: 50px;
   }
 
   .features .container {
@@ -2937,11 +2968,41 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
+  .complex__effect {
+    background-size: 140px;
+    background-position: top 25px right 300px,top 227px right 200px,top 400px left 500px,top 630px right 300px,left 700px bottom 25px;
+  }
+
+  .product {
+    min-height: 840px;
+  }
+
+  .expert__heading {
+    width: 400px;
+  }
+
+  .expert__slide-img img {
+    width: 100%;
+  }
+
+  .section-heading {
+    width: 400px;
+  }
 }
 
 @media (min-width: 1280px) {
+  .container {
+    padding: 0 100px;
+  }
+
   .header {
     padding: 28px 0;
+  }
+
+  .btn {
+    font-size: 18px;
+    line-height: 21.09px;
   }
 
   .btn--prev,
@@ -2966,11 +3027,15 @@ button,
   }
 
   .mainscreen {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .mainscreen__title {
     width: 400px;
+  }
+
+  .mainscreen__links {
+    margin-top: 250px;
   }
 
   .mainscreen__slider {
@@ -2983,7 +3048,7 @@ button,
   }
 
   .mainscreen__slider-nav {
-    margin-bottom: 40px;
+    margin-bottom: 90px;
   }
 
   .mainscreen__slide-prev,
@@ -2991,13 +3056,29 @@ button,
     margin: 0 30px;
   }
 
-  .mainscreen__bg-icon {
-    height: 760px;
+  .mainscreen__btn {
+    margin-top: 95px;
+    margin-right: 32%;
   }
 
-  .title {
-    font-size: 55px;
-    line-height: 55px;
+  .mainscreen__bg-icon {
+    height: 760px;
+    top: 120px;
+  }
+
+  .title--h1 {
+    font-size: 45px;
+    line-height: 37px;
+  }
+
+  .title--h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .title--h2 {
+    font-size: 28px;
+    line-height: 34px;
   }
 
   .promo {
@@ -3009,8 +3090,22 @@ button,
     line-height: 56.25px;
   }
 
+  .features__item p {
+    width: 200px;
+  }
+
   .features__tooltip {
     right: 50px;
+  }
+
+  .complex .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .complex__heading {
+    width: 263px;
   }
 
   .complex__effect {
@@ -3096,6 +3191,16 @@ button,
     min-height: 760px;
   }
 
+  .title--h1 {
+    font-size: 47px;
+    line-height: 39px;
+  }
+
+  .title--h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
   .features__item {
     max-width: 360px;
   }
@@ -3115,16 +3220,6 @@ button,
 
   .features {
     padding: 108px 0 132px;
-  }
-
-  .complex .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .complex__heading {
-    width: 263px;
   }
 
   .complex__heading p {
