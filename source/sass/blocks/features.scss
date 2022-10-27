@@ -9,6 +9,10 @@
       flex-direction: row;
       justify-content: space-between;
     }
+    @include vp-1440 {
+      padding-left: 151px;
+      padding-right: 165px;
+    }
   }
 
   &__item {
@@ -50,6 +54,8 @@
       @include vp-1440 {
         font-size: 16px;
         line-height: 24.77px;
+        width: 208px;
+        margin-top: 8px;
       }
     }
   }
@@ -64,13 +70,17 @@
   }
 
   @include vp-1440 {
-    padding: 108px 0 132px;
+    padding: 102px 0 63px;
   }
 
   &__note {
     position: relative;
     width: 40px;
     height: 40px;
+
+    @include vp-1440 {
+      margin-top: 25px;
+    }
   }
 
   &__tooltip {

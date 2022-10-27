@@ -7,12 +7,21 @@
     padding: 0;
   }
 
+  @include vp-375 {
+    margin-top: 100px;
+  }
+
   @include vp-1024 {
     margin-bottom: 50px;
   }
 
   @include vp-1280 {
     margin-bottom: 100px;
+  }
+
+  @include vp-1440 {
+    margin-top: 69px;
+    margin-bottom: 0;
   }
 
   &__desc {
@@ -35,6 +44,10 @@
     @include vp-1280 {
       font-size: 48px;
       line-height: 56.25px;
+      margin: 0;
+    }
+    @include vp-1440 {
+      margin: 0;
     }
   }
 
@@ -71,6 +84,7 @@
   }
 
   &__offer {
+    width: 200%;
     border-top: 1px solid $color-mardi-gras;
     border-bottom: 1px solid $color-mardi-gras;
     // --marquee-width: 1296px;

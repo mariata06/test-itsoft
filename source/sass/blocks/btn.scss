@@ -50,7 +50,7 @@
 
   &--purple-br {
     color: $color-mardi-gras;
-    padding: 10px 26px 7px 25px;
+    padding: 10px 24px 7px 24px;
     border-radius: 100px;
     border: 1px solid $color-mardi-gras;
     font-family: "roboto";
@@ -61,6 +61,12 @@
     justify-content: center;
     width: 132px;
     height: 34px;
+
+    @include vp-375 {
+      width: 145px;
+      padding: 10px 24px 10px;
+      height: unset;
+    }
 
     @include vp-1024 {
       width: 155px;

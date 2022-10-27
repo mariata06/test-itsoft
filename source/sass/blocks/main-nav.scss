@@ -15,6 +15,10 @@
   &__item {
     margin-right: 12px;
 
+    @include vp-1440 {
+      margin-right: 45px;
+    }
+
     svg {
       fill: none;
     }
@@ -35,10 +39,45 @@
     border: none;
     display: none;
     display: block;
-    // margin-left: auto;
+
+    @include vp-1280 {
+      width: 66px;
+      height: 41px;
+    }
 
     svg {
+      width: 33px;
+      height: 20px;
       fill: none;
+
+      @include vp-1280 {
+        width: 66px;
+        height: 41px;
+      }
+    }
+  }
+
+  &__search {
+    svg {
+      width: 24px;
+      height: 23px;
+
+      @include vp-1280 {
+        width: 48px;
+        height: 47px;
+      }
+    }
+  }
+
+  &__location {
+    svg {
+      width: 21px;
+      height: 24px;
+
+      @include vp-1280 {
+        width: 41px;
+        height: 49px;
+      }
     }
   }
 }
