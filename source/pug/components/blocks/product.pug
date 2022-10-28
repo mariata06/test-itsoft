@@ -1,9 +1,13 @@
 mixin product()
   section.product
-    .product__bg-icon
-        picture
-          source(srcset="img/content/icon-wave2-desktop.svg" media="(min-width: 1280px)")
-          +img-var("content", "icon-wave-mobile", "svg", 320, 242, "волна")
+    .product__bg-icon.product__bg-icon--top
+      picture
+        source(srcset="img/content/icon-wave2-desktop.svg" media="(min-width: 1280px)")
+        +img-var("content", "icon-wave-mobile", "svg", 320, 242, "волна")
+    .product__bg-icon.product__bg-icon--bottom
+      picture
+        source(srcset="img/content/icon-wave2-desktop.svg" media="(min-width: 1280px)")
+        +img-var("content", "icon-wave-mobile", "svg", 320, 242, "волна")
     .container
       .product__content
         .product__heading.section-heading
@@ -35,4 +39,4 @@ mixin product()
                 +icon("icon-prev", 34, 34)
               button.btn.btn--next.product__slide-next
                 +icon("icon-next", 34, 34)
-          button.btn.btn--purple-br.product__btn Подробнее >
+          button(type="button").btn.btn--purple-br.product__btn Подробнее >

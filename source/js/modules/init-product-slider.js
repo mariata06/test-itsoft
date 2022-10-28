@@ -11,16 +11,6 @@ const initProductSlider = () => {
       prevSlideMessage: 'Предыдущий слайд',
     },
     slidesPerView: 'auto',
-    // pagination: {
-    //   el: '.slider-info__pagination',
-    //   clickable: true,
-    //   type: 'fraction',
-    // },
-    // breakpoints: { // ломает слайдер, обрезает его ниже 2/3
-    //   767: {
-    //     autoHeight: true,
-    //   },
-    // },
   });
 };
 

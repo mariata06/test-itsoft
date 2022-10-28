@@ -1,0 +1,17 @@
+mixin sale
+  section.sale
+    .container
+      .sale__content
+        .sale__heading.section-heading
+          h2.sale__title.title.title--h2 Где <br> купить
+          p.sale__paragraph Ветонизирующее средство ВЕНАРУС вы можете приобрести в аптеках вашего города
+        .sale__wrapper
+          .sale__img
+            picture
+              source(srcset="img/content/sale-img-desktop.png 1x, img/content/sale-img-desktop@2x.png 2x" media="(min-width: 768px)")
+              img(src="img/content/sale-img-desktop.png" srcset="img/content/sale-img-desktop@2x.png 2x" alt="Препарат Венарус")
+          .sale__links
+            a(href="#").btn.btn--purple-br.sale__link apteka.ru
+            a(href="#").btn.btn--purple-br.sale__link 366.ru
+            a(href="#").btn.btn--purple-br.sale__link stolichki.ru
+    .sale__gradient

@@ -7,6 +7,9 @@
     padding-top: 93px;
     padding-bottom: 150px;
   }
+  @include vp-1440 {
+    padding-top: 122px;
+  }
 
   &__content {
     position: relative;
@@ -30,6 +33,10 @@
 
   &__title {
     margin-bottom: 40px;
+
+    @include vp-1440 {
+      margin-bottom: 31px;
+    }
   }
 
   &__paragraph {
@@ -43,12 +50,24 @@
     @include vp-1280 {
       width: 847px;
     }
+    @include vp-1440 {
+      margin-left: auto;
+      margin-right: 0;
+      margin-top: 6px;
+      padding-bottom: 10px;
+    }
 
     .swiper-pagination {
       text-align: left;
 
+      @include vp-1440 {
+        bottom: 3px;
+      }
+
       .swiper-pagination-bullet {
         transition: opacity $trans-default;
+        margin-left: 8px;
+        margin-right: 8px;
 
         @include hover-focus {
           opacity: 0.7;
@@ -59,8 +78,8 @@
     .swiper-pagination-bullet {
       width: 16px;
       height: 16px;
-      margin-left: 8px;
-      margin-right: 8px;
+      // margin-left: 8px;
+      // margin-right: 8px;
       background-color: $color-default-white;
       border: 1px solid $color-palatinate-purple-2;
     }
@@ -76,6 +95,22 @@
 
   &__slider-container {
     margin-bottom: 46px;
+
+  }
+
+  &__slider-wrapper {
+    position: relative;
+    @include vp-1440 {
+      width: 847px;
+    }
+  }
+
+  &__slider-btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -83%);
+    z-index: 1000;
   }
 
   &__slide-img {

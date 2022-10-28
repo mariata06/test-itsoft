@@ -6,6 +6,7 @@ import {initMainscreenSlider} from './modules/init-mainscreen-slider';
 import {initPromo} from './modules/init-promo';
 import {initProductSlider} from './modules/init-product-slider';
 import {initExpertSlider} from './modules/init-expert-slider';
+import {initMobileMenu} from './modules/init-mobile-menu';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initMainscreenSlider();
+  initMobileMenu();
 
   // Modules
   // ---------------------------------

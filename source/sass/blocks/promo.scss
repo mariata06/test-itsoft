@@ -25,21 +25,12 @@
   }
 
   &__desc {
-    // -webkit-animation: animMarqueeRtl 5s linear infinite;
-    // animation: animMarqueeRtl 5s linear infinite;
-
-    // width: 200%;
     width: 100%;
     padding: 16px 0 22px;
     color: $color-palatinate-purple-2;
-    // border-top: 1px solid $color-mardi-gras;
-    // border-bottom: 1px solid $color-mardi-gras;
-
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 48px;
+    line-height: 56.25px;
     font-weight: 300;
-
-    animation: scrolling var(--marquee-animation-duration) linear infinite;
 
     @include vp-1280 {
       font-size: 48px;
@@ -51,52 +42,59 @@
     }
   }
 
-  // @-webkit-keyframes animMarqueeRtl {
-  //   0% {
-  //     -webkit-transform: translateX(100%);
-  //     transform: translateX(100%);
-  //   }
-  //   100% {
-  //     -webkit-transform: translateX(0%);
-  //     transform: translateX(0%);
-  //   }
-  // }
+  &__desc-desktop {
+    display: none;
 
-  // @keyframes animMarqueeRtl {
-  //   0% {
-  //     -webkit-transform: translateX(100%);
-  //     transform: translateX(100%);
-  //   }
-  //   100% {
-  //     -webkit-transform: translateX(0);
-  //     transform: translateX(0);
-  //   }
-  // }
-
-  @keyframes scrolling {
-    0% {
-      transform: translateX(0);
+    @media (min-width: 1100px) {
+      display: block;
     }
 
-    100% {
-      transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+    @include vp-1280 {
+      display: block;
     }
   }
+
+  &__desc-tablet {
+    display: none;
+    font-size: 40px;
+    line-height: 40px;
+
+    @media (min-width: 525px) {
+      display: block;
+    }
+
+    @include vp-768 {
+      display: block;
+    }
+
+    @media (min-width: 1100px) {
+      display: none;
+    }
+    @include vp-1280 {
+      display: none;
+    }
+  }
+
+  &__desc-mobile {
+    display: block;
+    font-size: 38px;
+    line-height: 38px;
+
+    @media (min-width: 525px) {
+      display: none;
+    }
+
+    @include vp-768 {
+      display: none;
+    }
+  }
+
 
   &__offer {
     width: 200%;
     border-top: 1px solid $color-mardi-gras;
     border-bottom: 1px solid $color-mardi-gras;
-    // --marquee-width: 1296px;
-    --marquee-width: 1440px;
-    // --marquee-width: 1500px;
-    // --marquee-width: 2592px;
-    // height: 112px;
     overflow: hidden;
     position: relative;
-    // --marquee-elements-displayed: 5;
-    --marquee-elements-displayed: 2;
-    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-    --marquee-animation-duration: calc(var(--marquee-elements) * 4s);
   }
 }

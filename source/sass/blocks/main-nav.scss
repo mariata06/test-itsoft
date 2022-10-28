@@ -10,6 +10,10 @@
     padding: 0;
 
     list-style: none;
+
+    &.hide {
+      visibility: hidden;
+    }
   }
 
   &__item {
@@ -39,6 +43,9 @@
     border: none;
     display: none;
     display: block;
+    position: relative;
+    width: 33px;
+    height: 20px;
 
     @include vp-1280 {
       width: 66px;
@@ -49,11 +56,42 @@
       width: 33px;
       height: 20px;
       fill: none;
+      position: absolute;
+      top: 0;
+      left: 0;
 
       @include vp-1280 {
         width: 66px;
         height: 41px;
       }
+    }
+
+    svg:last-child {
+      animation: up-down 0.1s ease;
+
+      @keyframes up-down {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(-20deg);
+        }
+      }
+
+    }
+  }
+
+  .main-nav__toggle-icon-burger {
+    &.hide {
+      display: none;
+    }
+  }
+
+  .main-nav__toggle-icon-squeeze {
+    display: none;
+    &.show {
+      display: block;
     }
   }
 

@@ -11,20 +11,10 @@ const initExpertSlider = () => {
       nextSlideMessage: 'Следующий слайд',
       prevSlideMessage: 'Предыдущий слайд',
     },
-    // autoplay: {
-    //   delay: 2000,
-    // },
+    autoplay: {
+      delay: 2000,
+    },
     slidesPerView: 'auto',
-    // pagination: {
-    //   el: '.slider-info__pagination',
-    //   clickable: true,
-    //   type: 'fraction',
-    // },
-    // breakpoints: { // ломает слайдер, обрезает его ниже 2/3
-    //   767: {
-    //     autoHeight: true,
-    //   },
-    // },
   });
 };
 

@@ -33,4 +33,11 @@
       }
     }
   }
+
+  .container {
+    @include vp-1440 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

@@ -24,6 +24,10 @@
     min-height: 760px;
   }
 
+  @include vp-1920 {
+    min-height: 1000px;
+  }
+
   &__title {
     letter-spacing: -1.7px;
     line-height: 39px;
@@ -44,11 +48,14 @@
     @include vp-1440 {
       margin-bottom: 200px;
     }
+    @include vp-1920 {
+      margin-bottom: 350px;
+    }
   }
 
   &__desc {
     position: relative;
-    z-index: 1;
+    z-index: 1000;
   }
 
   &__links {
@@ -212,8 +219,6 @@
 
     img,
     svg {
-      // width: 200%;
-      // height: 100%;
       width: 100%;
     }
 
@@ -227,15 +232,8 @@
     }
 
     @include vp-1440 {
-      // height: 760px;
       top: 18px;
     }
-
-    // img {
-    //   @media (min-width: 321px) {
-    //     width: 100%;
-    //   }
-    // }
   }
 
   &__bg-icon--top {
@@ -263,13 +261,13 @@
 
   &__bg-icon--bottom {
     z-index: 100;
-    transform: translate(-3%, -15px);
+    // transform: translate(-3%, -15px);
 
     img,
     svg {
-      width: 120%;
+      // width: 120%;
       // width: 1550px;
-      transform: scale(1.1);
+      // transform: scale(1.1);
       top: -50px;
 
       animation: move-wave-bottom 8s infinite linear;
@@ -288,8 +286,8 @@
         transform: translateX(-3%) translateZ(0) scaleY(0.95)
       }
       100% {
-        transform: translateX(0%) translateZ(0) scaleY(1)
+        transform: translateX(0) translateZ(0) scaleY(1)
       }
-  }
+    }
   }
 }

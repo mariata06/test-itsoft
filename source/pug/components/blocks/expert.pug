@@ -24,3 +24,5 @@ mixin expert()
                     source(srcset="img/slides/video-expert-desktop.png 1x, img/slides/video-expert-desktop@2x.png 2x" media="(min-width: 768px)")
                     img(src="img/slides/video-expert-desktop.png" srcset="img/slides/video-expert-desktop@2x.png 2x" alt="Венарус")
             .expert__slider-paginaton.swiper-pagination
+            button(type="button").btn.btn--play.expert__slider-btn-play
+              +icon("icon-play", 67, 67)

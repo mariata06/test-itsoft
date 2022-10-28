@@ -88,4 +88,16 @@
       opacity: 0.7;
     }
   }
+
+  &--play {
+    svg {
+      fill: none;
+      @include vp-1024 {
+        width: 67px;
+        height: 67px;
+      }
+      width: 47px;
+      height: 47px;
+    }
+  }
 }
