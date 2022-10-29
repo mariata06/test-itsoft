@@ -16,6 +16,7 @@ const webpackConfig = require('./webpack.config.js');
 const pug = require('gulp-pug');
 const cached = require('gulp-cached');
 const gcmq = require('gulp-group-css-media-queries');
+const path = require('path'); const ghPages = require('gulp-gh-pages');
 
 const pugToHtml = () => {
   return gulp.src('source/pug/pages/*.pug')
@@ -123,7 +124,8 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    // index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,
@@ -147,6 +149,8 @@ const refresh = (done) => {
   server.reload();
   done();
 };
+
+gulp.task('deploy', function() { return gulp.src('./build/**/*') .pipe(ghPages()); });
 
 const start = gulp.series(clean, svgo, copy, css, sprite, js, pugToHtml, syncServer);
 

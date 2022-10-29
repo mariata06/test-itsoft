@@ -44,7 +44,6 @@
       position: relative;
       position: absolute;
       z-index: 1000;
-      // animation: scale 5s infinite ease;
       cursor: pointer;
 
       @include vp-1280 {
@@ -56,11 +55,6 @@
         animation: reverse;
         animation-direction: alternate;
         animation: alternate-reverse;
-        // animation-play-state: paused;
-
-        // svg {
-        //   animation: reverse;
-        // }
       }
     }
     .complex__bg-icon--1 {
@@ -86,8 +80,6 @@
         transform: scale(0.7) translate(-75%, -75%);
         @include vp-1280 {
           transform: scale(1) translate(-50%, -50%);
-          // transform: unset;
-          // animation: scale-rotate 7s infinite linear;
         }
       }
     }
@@ -165,16 +157,9 @@
       transform: translate(-50%, -50%);
     }
 
-    // width: 100%;
-    // height: 100%;
-    // background-image: url("../img/svg/icon-star.svg"), url("../img/svg/icon-ellipse-1.svg"), url("../img/svg/icon-ellipse-2.svg"), url("../img/svg/icon-ellipse-3.svg"), url("../img/svg/icon-ellipse-4.svg");
     background-repeat: no-repeat;
-    // background-position: top right 30px, top 240px right, top 400px left 150px, top 670px right, left 200px bottom 150px;
     background-size: 67px;
     z-index: 1000;
-    // animation: scale 5s infinite ease;
-    // animation: rotate 5s infinite ease;
-    // animation: 1s linear 0s normal none infinite running rotate;
 
     @include vp-768 {
       background-size: 100px;

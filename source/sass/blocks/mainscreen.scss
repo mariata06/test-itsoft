@@ -80,7 +80,6 @@
   &__link {
     min-height: 67px;
     display: flex;
-    // display: inline-flex;
     align-items: center;
     font-size: 18px;
     line-height: 21.09px;
@@ -237,7 +236,6 @@
   }
 
   &__bg-icon--top {
-    // width: 0;
     animation: move-wave-top 5s infinite ease;
 
     @keyframes move-wave-top {
@@ -261,13 +259,9 @@
 
   &__bg-icon--bottom {
     z-index: 100;
-    // transform: translate(-3%, -15px);
 
     img,
     svg {
-      // width: 120%;
-      // width: 1550px;
-      // transform: scale(1.1);
       top: -50px;
 
       animation: move-wave-bottom 8s infinite linear;

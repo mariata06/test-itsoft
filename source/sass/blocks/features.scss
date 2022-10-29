@@ -1,6 +1,5 @@
 .features {
   padding: 35px 0;
-  // padding-top: 35px;
   .container {
     display: flex;
     flex-direction: column;
@@ -16,9 +15,7 @@
   }
 
   &__item {
-    // position: relative;
     display: flex;
-    // margin: 0 auto;
     margin-bottom: 30px;
 
     @include vp-1440 {
@@ -45,7 +42,6 @@
       line-height: 24.77px;
       margin: 0;
       margin-left: auto;
-      // text-align: right;
 
       @include vp-1280 {
         width: 200px;
@@ -115,6 +111,5 @@
 
   &__note:hover .features__tooltip {
     opacity: 1;
-    // display: block;
   }
 }

@@ -32,7 +32,6 @@
   &__copyright {
     margin-top: 50px;
     display: flex;
-    // flex-wrap: wrap;
     align-items: baseline;
     align-items: flex-start;
     justify-content: space-between;
@@ -70,7 +69,6 @@
     font-weight: 300;
 
     &:first-child {
-      // align-self: flex-start;
       margin-right: auto;
     }
   }

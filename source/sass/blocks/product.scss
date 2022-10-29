@@ -11,11 +11,9 @@
   @include vp-1440 {
     padding-top: 367px;
     margin-top: -100px;
-    // margin-top: -463px;
   }
 
   position: relative;
-  // z-index: 100;
 
   &__bg-icon {
     position: absolute;
@@ -65,13 +63,9 @@
 
   &__bg-icon--bottom {
     z-index: 100;
-    // transform: translate(-3%, -15px);
 
     img,
     svg {
-      // width: 120%;
-      // width: 1550px;
-      // transform: scale(1.1);
       top: -50px;
 
       animation: move-wave-bottom 8s infinite linear;
@@ -113,7 +107,6 @@
 
     @include vp-1440 {
       flex-direction: row;
-      // margin-top: 366px;
     }
   }
 
@@ -148,19 +141,10 @@
     }
   }
 
-  // &__slide {
-  //   @include vp
-  // }
-
   &__slider {
     overflow: hidden;
-    // height: 310px;
     width: 100%;
     margin-right: 0;
-
-    // @include vp-375 {
-    //   width: 50%;
-    // }
 
     @include vp-1280 {
       width: 570px;

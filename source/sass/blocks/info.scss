@@ -126,13 +126,9 @@
 
   &__bg-icon--bottom {
     z-index: 100;
-    // transform: translate(-3%, -15px);
 
     img,
     svg {
-      // width: 120%;
-      // width: 1550px;
-      // transform: scale(1.1);
       top: -50px;
 
       animation: move-wave-bottom 8s infinite linear;

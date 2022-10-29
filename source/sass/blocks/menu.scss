@@ -4,13 +4,10 @@
   background-color: $color-default-white;
   z-index: 2000;
   transition: all $trans-default;
-  // opacity: 0;
   display: none;
   padding-top: 50px;
-  // pointer-events: none;
 
   &.show {
-    // opacity: 1;
     display: block;
   }
 
